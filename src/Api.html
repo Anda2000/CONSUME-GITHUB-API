@@ -1,0 +1,21 @@
+<html>
+  <title>API</title>
+  <script>
+    function fetchUserData(repo_name, start_date, end_date) {}
+
+    repo_name = "https://api.github.com/repo_name";
+    start_date = "https://api.github.com/start_date";
+    end_date = "https://api.github.com/end_date";
+
+    fetch("https://api.github.com/")
+      .then(function (responce) {
+        return responce.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson.api);
+      })
+      .catch(function (erro) {
+        console.log("Error: " + error);
+      });
+  </script>
+</html>
